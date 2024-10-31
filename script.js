@@ -1,1 +1,2 @@
-console.log("Example")
+console.log("これはテストログです");
+
