@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>検索サイト</title>
+    <style>
+        /* 全体のリセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 全体の背景 */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        /* ロゴのスタイル */
+        .logo {
+            font-size: 64px;
+            color: #4285f4;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* 検索ボックスのスタイル */
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px;
+        }
+
+        .search-box {
+            flex: 1;
+            padding: 12px;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            border-radius: 24px;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-box:focus {
+            border-color: #4285f4;
+            box-shadow: 0 0 4px rgba(66, 133, 244, 0.5);
+        }
+
+        .search-button {
+            margin-left: 8px;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #4285f4;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .search-button:hover {
+            background-color: #357ae8;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ロゴ部分 -->
+    <div class="logo">MySearch</div>
+
+    <!-- 検索ボックスとボタン -->
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="検索">
+        <button class="search-button">検索</button>
+    </div>
+
+    <!-- フッター -->
+    <div class="footer">MySearch © 2024</div>
+
+</body>
+</html>
