@@ -32,21 +32,21 @@
   width: auto;
   height: auto;
   background: white;
-  background-size: 400% 400%;
-  animation: wave 5s infinite;
-  border-radius: 10px; /* 角を丸くするオプション */
+  position: relative;
+  overflow: hidden;
+  animation: wave 5s ease-in-out infinite;
 }
 
 /* アニメーション */
 @keyframes wave {
   0% {
-    background-position: 0% 0%;
+    transform: scaleY(1) translateY(0);
   }
   50% {
-    background-position: 100% 100%;
+    transform: scaleY(1.2) translateY(-20px);
   }
   100% {
-    background-position: 0% 0%;
+    transform: scaleY(1) translateY(0);
   }
 }
 
