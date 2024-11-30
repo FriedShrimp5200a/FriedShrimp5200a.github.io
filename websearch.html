@@ -27,6 +27,28 @@
             height: 100vh;
             background-color: #f5f5f5;
         }
+/* 四角いコンテナ */
+.container {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(45deg, #00bcd4, #009688);
+  background-size: 400% 400%;
+  animation: wave 5s infinite;
+  border-radius: 10px; /* 角を丸くするオプション */
+}
+
+/* アニメーション */
+@keyframes wave {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
 
         /* ロゴのスタイル */
         .logo {
@@ -85,6 +107,7 @@
 </head>
 <body>
 
+    <div class="container">
     <!-- ロゴ部分 -->
     <img class="logo" src="./image/logo.png" alt="ロゴ画像">
     <p>Image and Code Created by ChatGPT</p>
@@ -94,7 +117,7 @@
         <input type="text" class="search-box" placeholder="Enter text here...">
         <button class="search-button">検索</button>
     </div>
-
+    </div>
     <!-- フッター -->
     <div class="footer">MySearch © 2024</div>
     
